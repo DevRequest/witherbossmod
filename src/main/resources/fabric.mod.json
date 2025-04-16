@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "witherbossmod",
+  "version": "${version}",
+  "name": "Wither Boss Mod",
+  "description": "Adds a custom Wither boss that drops a Wither Scythe.",
+  "authors": [
+    "Adrian"
+  ],
+  "contact": {
+    "homepage": "https://example.com/",
+    "sources": "https://github.com/example/witherbossmod"
+  },
+  "license": "All Rights Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.adrian.witherbossmod.Witherbossmod"
+    ],
+    "client": [
+      "com.adrian.witherbossmod.client.WitherbossmodClient"
+    ]
+  },
+  "mixins": [
+    "mixins.witherbossmod.json"
+  ],
+  "jars": [
+    {
+      "file": "steel_scythe-1.0.4_1.21.1b.jar"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric": "0.115.4+1.21.1",
+    "minecraft": "1.21.1",
+    "java": ">=17"
+  }
+}
