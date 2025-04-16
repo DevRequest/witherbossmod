@@ -16,7 +16,6 @@ public abstract class WitherEntityMixin {
 
     @Inject(method = "mobTick", at = @At("HEAD"))
     private void hideVanillaBossBar(CallbackInfo info) {
-        WitherEntity entity = (WitherEntity) (Object) this;
         ServerBossBar vanillaBossBar = this.getVanillaBossBar();
 
         if (vanillaBossBar != null) {
