@@ -21,9 +21,6 @@
       "com.adrian.witherbossmod.client.WitherbossmodClient"
     ]
   },
-  "mixins": [
-    "mixins.witherbossmod.json"
-  ],
   "jars": [
     {
       "file": "steel_scythe-1.0.4_1.21.1b.jar"
